@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "9bb59336-70a9-4441-9ad3-e9677055510f",
+		"name": "API - Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Transasction",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODAxMzU2OSwianRpIjoiZTYwMzAwNjYtYmJhMC00NDlkLWJiNzUtZTk0MzA4NmQ0MjZmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImpvYW5uYUB5b3BtYWlsLmNvbSIsIm5iZiI6MTY3ODAxMzU2OSwiZXhwIjoxNjc4MDE0NDY5fQ._duHRjShMce0xOfklIE-eneGlX9i8iudm6wwixl5IV4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/transaction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Admin Topup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "joanna@yopmail.com",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin-topup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin-topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODAwNzE2NSwianRpIjoiMmQ3YWExYWQtODdiNC00MmY3LTgyZDQtYzZmYTk4NmYxMTE2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQHlvcG1haWwuY29tIiwibmJmIjoxNjc4MDA3MTY1LCJleHAiOjE2NzgwMDgwNjV9.nhrZXj8k3kH2PJum23LQHtc2vwCEvaq1evBcHzs1O84",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Send to User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODAxMzE0NCwianRpIjoiMTk5YjhjYTQtNWM5Zi00MzYxLThkNzctMTRlN2I1ZjQyMDBlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQHlvcG1haWwuY29tIiwibmJmIjoxNjc4MDEzMTQ0LCJleHAiOjE2NzgwMTQwNDR9.lE_r0OnqbYnHl8BklVuKoCFMn2UDre-oU6olRRhOfGU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marie@yopmail.com",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "50",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send-to-user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send-to-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Audit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODAwOTE1NCwianRpIjoiYjI5YjgzYTQtNDU3Yy00MmFkLTgyYTktNjJlZjU2Njg1N2EzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQHlvcG1haWwuY29tIiwibmJmIjoxNjc4MDA5MTU0LCJleHAiOjE2NzgwMTAwNTR9.sPCkLMj5vuMxgBzCa4O95OgwNAM-7n2scKj1De8q4EQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/audit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"audit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@yopmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marie@yopmail.com",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
