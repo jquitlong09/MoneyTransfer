@@ -1,6 +1,10 @@
 SET-UP BACKEND / API SERVICES
+- Open a terminal
 - Navigate into quitlong-app
-- Open the virtual env: source auth/bin/activate
+- Execute the command: pip install virtualenv (To install virtualenv)
+- Execute the command: virtualenv auth (To create virtualenv named auth)
+- Open the virtual env by executing this in command: source auth/bin/activate
+- Install requirements: pip install -r requirements.txt
 - Execute export FLASK_APP=project
 - Execute flask run
 
@@ -15,6 +19,7 @@ CURRENT CREDS
 - password: P@ssw0rd
 
 RUN THE REACT APP
+- Open a terminal
 - Navigate to react-frontend
 - Execute npm install
 - Execute npm start
